@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "+pSP1BL074Y=",
+  "success": true,
+  "projectFilePath": "D:\\DoAnFall25\\Demo_Code\\ServerXML\\ServerXML.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.9\\microsoft.bcl.cryptography.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.9\\microsoft.extensions.configuration.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.9\\microsoft.extensions.configuration.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.9\\microsoft.extensions.configuration.fileextensions.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.9\\microsoft.extensions.configuration.json.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.xml\\9.0.9\\microsoft.extensions.configuration.xml.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.9\\microsoft.extensions.fileproviders.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.9\\microsoft.extensions.fileproviders.physical.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.9\\microsoft.extensions.filesystemglobbing.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.9\\microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.formats.asn1\\9.0.9\\system.formats.asn1.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.io.pipelines\\9.0.9\\system.io.pipelines.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.9\\system.security.cryptography.pkcs.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.security.cryptography.xml\\9.0.9\\system.security.cryptography.xml.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.text.encodings.web\\9.0.9\\system.text.encodings.web.9.0.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.text.json\\9.0.9\\system.text.json.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
