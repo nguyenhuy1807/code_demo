@@ -2,12 +2,14 @@
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using Microsoft.Extensions.Configuration;
 
 class ServerBinary
 {
     static void Main()
     {
+        // Đọc file cấu hình
         var config = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -22,19 +24,43 @@ class ServerBinary
         while (true)
         {
             TcpClient client = server.AcceptTcpClient();
-            Console.WriteLine("Client connected!");
+            Console.WriteLine("[ServerBinary] Client connected!");
 
             NetworkStream stream = client.GetStream();
 
-            // Nhận dữ liệu nhị phân
-            byte[] buffer = new byte[1024];
-            int byteCount = stream.Read(buffer, 0, buffer.Length);
+            // Vòng lặp nhận dữ liệu liên tục từ client
+            while (true)
+            {
+                try
+                {
+                    byte[] buffer = new byte[1024];
+                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
 
-            Console.WriteLine($"Received {byteCount} bytes");
+                    if (bytesRead == 0)
+                    {
+                        Console.WriteLine("[ServerBinary] Client disconnected.");
+                        break;
+                    }
 
-            // Gửi phản hồi lại
-            byte[] response = BitConverter.GetBytes(byteCount);
-            stream.Write(response, 0, response.Length);
+                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    Console.WriteLine($"[ServerBinary] Received: {message}");
+
+                    if (message.Trim().ToLower() == "exit")
+                    {
+                        Console.WriteLine("[ServerBinary] Client requested disconnection.");
+                        break;
+                    }
+
+                    string response = $"Server received: {message.Length} bytes";
+                    byte[] responseBytes = Encoding.UTF8.GetBytes(response);
+                    stream.Write(responseBytes, 0, responseBytes.Length);
+                }
+                catch (IOException)
+                {
+                    Console.WriteLine("[ServerBinary] Connection lost.");
+                    break;
+                }
+            }
 
             client.Close();
         }

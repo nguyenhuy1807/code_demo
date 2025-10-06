@@ -16,20 +16,43 @@ namespace ClientXML
                 .Build();
 
             string baseUrl = config["BaseUrl"];
-            string xmlData = "<student><name>Nguyen Huy</name><score>100</score></student>";
+            Console.WriteLine("[Client XML] Connected to " + baseUrl);
+            Console.WriteLine("Type 'exit' at any time to quit.\n");
 
-            Console.WriteLine("[Client XML] Send data:\n" + xmlData);
+            while (true)
+            {
+                Console.Write("[Client XML] Enter student name: ");
+                string name = Console.ReadLine();
+                if (string.Equals(name, "exit", StringComparison.OrdinalIgnoreCase)) break;
 
-            var request = (HttpWebRequest)WebRequest.Create(baseUrl);
-            request.Method = "POST";
-            request.ContentType = "application/xml";
+                Console.Write("[Client XML] Enter student score: ");
+                string score = Console.ReadLine();
+                if (string.Equals(score, "exit", StringComparison.OrdinalIgnoreCase)) break;
 
-            using (var writer = new StreamWriter(request.GetRequestStream()))
-                writer.Write(xmlData);
+                // Build XML
+                string xmlData = $"<student><name>{name}</name><score>{score}</score></student>";
+              
 
-            using var response = (HttpWebResponse)request.GetResponse();
-            using var reader = new StreamReader(response.GetResponseStream());
-            Console.WriteLine("[Client XML] Recieved response:\n" + reader.ReadToEnd());
+                try
+                {
+                    var request = (HttpWebRequest)WebRequest.Create(baseUrl);
+                    request.Method = "POST";
+                    request.ContentType = "application/xml";
+
+                    using (var writer = new StreamWriter(request.GetRequestStream()))
+                        writer.Write(xmlData);
+
+                    using var response = (HttpWebResponse)request.GetResponse();
+                    using var reader = new StreamReader(response.GetResponseStream());
+                    Console.WriteLine("[Client XML] Server replied:\n" + reader.ReadToEnd() + "\n");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("[Client XML] Error: " + ex.Message + "\n");
+                }
+            }
+
+            Console.WriteLine("[Client XML] Disconnected.");
         }
     }
 }

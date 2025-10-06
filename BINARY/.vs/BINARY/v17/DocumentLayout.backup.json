@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DoAnFall25\\Demo_Code\\BINARY\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4DEE6B-257C-6217-43B4-973C53502E3E}|ServerBinary\\ServerBinary.csproj|d:\\doanfall25\\demo_code\\binary\\serverbinary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4DEE6B-257C-6217-43B4-973C53502E3E}|ServerBinary\\ServerBinary.csproj|solutionrelative:serverbinary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276C9AD4-CA59-0B36-EF51-AE20C2DC80B3}|ClientBinary\\ClientBinary.csproj|d:\\doanfall25\\demo_code\\binary\\clientbinary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276C9AD4-CA59-0B36-EF51-AE20C2DC80B3}|ClientBinary\\ClientBinary.csproj|solutionrelative:clientbinary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\BINARY\\ClientBinary\\Program.cs",
+              "RelativeDocumentMoniker": "ClientBinary\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\BINARY\\ClientBinary\\Program.cs",
+              "RelativeToolTip": "ClientBinary\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T07:59:18.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\BINARY\\ServerBinary\\Program.cs",
+              "RelativeDocumentMoniker": "ServerBinary\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\BINARY\\ServerBinary\\Program.cs",
+              "RelativeToolTip": "ServerBinary\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T07:56:25.053Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"

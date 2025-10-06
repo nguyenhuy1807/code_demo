@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{837078B4-BF71-B500-92EB-3FEE0BB06885}|ServerJson\\ServerJson.csproj|d:\\doanfall25\\demo_code\\json\\serverjson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{837078B4-BF71-B500-92EB-3FEE0BB06885}|ServerJson\\ServerJson.csproj|solutionrelative:serverjson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B2902C0-5889-0C56-7F30-143FB172C817}|ClientJson\\ClientJson.csproj|d:\\doanfall25\\demo_code\\json\\clientjson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B2902C0-5889-0C56-7F30-143FB172C817}|ClientJson\\ClientJson.csproj|solutionrelative:clientjson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 207,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\JSON\\ServerJson\\Program.cs",
-              "RelativeDocumentMoniker": "ServerJson\\Program.cs",
-              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\JSON\\ServerJson\\Program.cs",
-              "RelativeToolTip": "ServerJson\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwC8AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\JSON\\ClientJson\\Program.cs",
+              "RelativeDocumentMoniker": "ClientJson\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\JSON\\ClientJson\\Program.cs",
+              "RelativeToolTip": "ClientJson\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:24:30.375Z",
+              "WhenOpened": "2025-10-06T08:18:26.52Z",
               "EditorCaption": ""
             },
             {
@@ -852,6 +856,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\JSON\\ServerJson\\Program.cs",
+              "RelativeDocumentMoniker": "ServerJson\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\JSON\\ServerJson\\Program.cs",
+              "RelativeToolTip": "ServerJson\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:24:30.375Z",
+              "EditorCaption": ""
             }
           ]
         },

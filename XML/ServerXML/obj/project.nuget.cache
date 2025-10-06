@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+pSP1BL074Y=",
+  "dgSpecHash": "hWzDsGu0cbQ=",
   "success": true,
-  "projectFilePath": "D:\\DoAnFall25\\Demo_Code\\ServerXML\\ServerXML.csproj",
+  "projectFilePath": "D:\\DoAnFall25\\Demo_Code\\XML\\ServerXML\\ServerXML.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.9\\microsoft.bcl.cryptography.9.0.9.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.9\\microsoft.extensions.configuration.9.0.9.nupkg.sha512",

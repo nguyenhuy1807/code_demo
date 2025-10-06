@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD4FE25B-34BC-4AB7-AC2C-62AE3FB12EF4}|server\\server.csproj|d:\\doanfall25\\demo_code\\server_client\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD4FE25B-34BC-4AB7-AC2C-62AE3FB12EF4}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27C9E6EA-0183-4C60-B897-CFFE6E1EA76C}|client\\client.csproj|d:\\doanfall25\\demo_code\\server_client\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27C9E6EA-0183-4C60-B897-CFFE6E1EA76C}|client\\client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4FE25B-34BC-4AB7-AC2C-62AE3FB12EF4}|server\\server.csproj|d:\\doanfall25\\demo_code\\server_client\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4FE25B-34BC-4AB7-AC2C-62AE3FB12EF4}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD4FE25B-34BC-4AB7-AC2C-62AE3FB12EF4}|server\\server.csproj|d:\\doanfall25\\demo_code\\server_client\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -22,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 208,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\Program.cs",
-              "RelativeDocumentMoniker": "server\\Program.cs",
-              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\Program.cs",
-              "RelativeToolTip": "server\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:24:24.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "server",
-              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\server.csproj",
-              "RelativeDocumentMoniker": "server\\server.csproj",
-              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\server.csproj",
-              "RelativeToolTip": "server\\server.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-04T13:23:36.786Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
@@ -878,11 +852,36 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\Program.cs",
+              "RelativeDocumentMoniker": "server\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\Program.cs",
+              "RelativeToolTip": "server\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:24:24.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "server.csproj",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\server.csproj",
+              "RelativeDocumentMoniker": "server\\server.csproj",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\server\\server.csproj",
+              "RelativeToolTip": "server\\server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-04T13:23:36.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
               "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\client\\Program.cs",
               "RelativeDocumentMoniker": "client\\Program.cs",
               "ToolTip": "D:\\DoAnFall25\\Demo_Code\\SERVER_CLIENT\\client\\Program.cs",
               "RelativeToolTip": "client\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowDMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T13:19:15.481Z",
               "EditorCaption": ""

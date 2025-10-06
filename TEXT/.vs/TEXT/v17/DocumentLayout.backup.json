@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DoAnFall25\\Demo_Code\\TEXT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C407CC2D-4B2B-62C7-4B09-8E229A9AA442}|ClientText\\ClientText.csproj|d:\\doanfall25\\demo_code\\text\\clienttext\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C407CC2D-4B2B-62C7-4B09-8E229A9AA442}|ClientText\\ClientText.csproj|solutionrelative:clienttext\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD3F88-13AD-9304-8199-DDBAC9BDB661}|ServerText\\ServerText.csproj|d:\\doanfall25\\demo_code\\text\\servertext\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD3F88-13AD-9304-8199-DDBAC9BDB661}|ServerText\\ServerText.csproj|solutionrelative:servertext\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\TEXT\\ServerText\\Program.cs",
+              "RelativeDocumentMoniker": "ServerText\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\TEXT\\ServerText\\Program.cs",
+              "RelativeToolTip": "ServerText\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T08:22:07.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnFall25\\Demo_Code\\TEXT\\ClientText\\Program.cs",
+              "RelativeDocumentMoniker": "ClientText\\Program.cs",
+              "ToolTip": "D:\\DoAnFall25\\Demo_Code\\TEXT\\ClientText\\Program.cs",
+              "RelativeToolTip": "ClientText\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T08:21:58.976Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"

@@ -16,12 +16,12 @@ namespace ServerXML
                 .Build();
 
             string baseUrl = config["BaseUrl"];
-            Console.WriteLine($"[Server XML] is running at {baseUrl}");
+            Console.WriteLine($"[Server XML] Running at {baseUrl}");
 
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add(baseUrl);
             listener.Start();
-            Console.WriteLine("Listening request...");
+            
 
             while (true)
             {
@@ -29,15 +29,17 @@ namespace ServerXML
                 using var reader = new StreamReader(context.Request.InputStream, context.Request.ContentEncoding);
                 string xmlData = reader.ReadToEnd();
 
-                Console.WriteLine($"Recieved XML:\n{xmlData}");
+                Console.WriteLine($"[Server XML] Received XML:\n{xmlData}\n");
 
-                string responseXml = "<response><message>Server recieved XML successfully!</message></response>";
+                // Respond
+                string responseXml = "<response><message>Server received XML successfully!</message></response>";
                 byte[] buffer = Encoding.UTF8.GetBytes(responseXml);
+
                 context.Response.ContentType = "application/xml";
                 context.Response.OutputStream.Write(buffer, 0, buffer.Length);
                 context.Response.OutputStream.Close();
 
-                Console.WriteLine("Responded XML.\n");
+                Console.WriteLine("[Server XML] Response sent.\n---------------------------------\n");
             }
         }
     }

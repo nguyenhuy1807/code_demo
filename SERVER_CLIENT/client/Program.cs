@@ -11,7 +11,7 @@ namespace client
     {
         static void Main()
         {
-            // Đọc config
+            // Load config
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -19,25 +19,44 @@ namespace client
 
             int port = int.Parse(config["Port"]);
 
-            // Chuẩn bị dữ liệu JSON
-            var person = new Person { Name = "Nguyen Van A", Age = 21 };
-            string json = JsonSerializer.Serialize(person);
+            Console.WriteLine($"[ClientJson TCP] Connecting to port {port}...");
+            using TcpClient client = new TcpClient("localhost", port);
+            using NetworkStream stream = client.GetStream();
+            using StreamWriter writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
+            using StreamReader reader = new StreamReader(stream, Encoding.UTF8);
 
-            // Kết nối TCP đến server
-            TcpClient client = new TcpClient("localhost", port);
-            using var stream = client.GetStream();
-            using var writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
-            using var reader = new StreamReader(stream, Encoding.UTF8);
+            Console.WriteLine("[ClientJson TCP] Connected!");
+            Console.WriteLine("Type 'exit' to quit.\n");
 
-            // Gửi JSON
-            writer.WriteLine(json);
-            Console.WriteLine($"[ClientJson TCP] send JSON: {json}");
+            while (true)
+            {
+                Console.Write("Enter name: ");
+                string name = Console.ReadLine();
+                if (string.Equals(name, "exit", StringComparison.OrdinalIgnoreCase))
+                    break;
 
-            // Nhận phản hồi
-            string response = reader.ReadLine();
-            Console.WriteLine($"Recieved from server: {response}");
+                Console.Write("Enter age: ");
+                string ageInput = Console.ReadLine();
+                if (string.Equals(ageInput, "exit", StringComparison.OrdinalIgnoreCase))
+                    break;
 
-            client.Close();
+                if (!int.TryParse(ageInput, out int age))
+                {
+                    Console.WriteLine("Invalid age. Try again.\n");
+                    continue;
+                }
+
+                var person = new Person { Name = name, Age = age };
+                string json = JsonSerializer.Serialize(person);
+
+                writer.WriteLine(json);
+                
+
+                string response = reader.ReadLine();
+                Console.WriteLine($"[ClientJson TCP] Received: {response}\n");
+            }
+
+            Console.WriteLine("[ClientJson TCP] Disconnected.");
         }
 
         public class Person

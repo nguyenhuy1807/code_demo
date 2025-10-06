@@ -27,3 +27,4 @@ D:\DoAnFall25\Demo_Code\SERVER_CLIENT\server\obj\Debug\net8.0\refint\server.dll
 D:\DoAnFall25\Demo_Code\SERVER_CLIENT\server\obj\Debug\net8.0\server.pdb
 D:\DoAnFall25\Demo_Code\SERVER_CLIENT\server\obj\Debug\net8.0\server.genruntimeconfig.cache
 D:\DoAnFall25\Demo_Code\SERVER_CLIENT\server\obj\Debug\net8.0\ref\server.dll
+D:\DoAnFall25\Demo_Code\SERVER_CLIENT\server\obj\Debug\net8.0\server.sourcelink.json

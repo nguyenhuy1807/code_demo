@@ -20,25 +20,29 @@ namespace server
             TcpListener server = new TcpListener(IPAddress.Any, port);
             server.Start();
 
-            Console.WriteLine($"[ServerJson TCP] listening at {port}...");
+            Console.WriteLine($"[ServerJson TCP] Listening on port {port}...\n");
 
             while (true)
             {
                 TcpClient client = server.AcceptTcpClient();
-                Console.WriteLine("Client connecting successfully!");
+                Console.WriteLine("[ServerJson TCP] Client connected!");
 
-                using var stream = client.GetStream();
-                using var reader = new StreamReader(stream, Encoding.UTF8);
-                using var writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
+                using NetworkStream stream = client.GetStream();
+                using StreamReader reader = new StreamReader(stream, Encoding.UTF8);
+                using StreamWriter writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
 
-                string receivedJson = reader.ReadLine();
-                Console.WriteLine($"Data JSON recieved: {receivedJson}");
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    Console.WriteLine($"[ServerJson TCP] Received JSON: {line}");
 
-                string response = "{\"message\": \"Server recieved JSON successfully!\"}";
-                writer.WriteLine(response);
+                    string response = "{\"message\": \"Server received JSON successfully!\"}";
+                    writer.WriteLine(response);
 
-                client.Close();
-                Console.WriteLine("Respond to client.\n");
+                    Console.WriteLine("[ServerJson TCP] Responded to client.\n");
+                }
+
+                Console.WriteLine("[ServerJson TCP] Client disconnected.\n");
             }
         }
     }

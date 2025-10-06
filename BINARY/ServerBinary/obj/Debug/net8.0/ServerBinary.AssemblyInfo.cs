@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServerBinary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d852afce43f5c8d153b20104fa6a635c6fb0a35e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServerBinary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServerBinary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
